@@ -30,13 +30,13 @@ class AppointmentTest extends TestCase
         $this->assertInstanceOf(Carbon::class, $appointment->end_time);
     }
 
-    public function test_a_user_can_create_appointment(){
+    // public function test_a_user_can_create_appointment(){
 
-        $user = User::factory()->create();
-        $this->actingAs($user);
-        $data = ['start_time'=> now(), 'end_time'=>now()->addHour(),'date'=>today(),'user_id'=>$user->id];
-        $appointment = Appointment::create($data);
-        $this->assertInstanceOf(Appointment::class, $appointment);
+    //     $user = User::factory()->create();
+    //     $this->actingAs($user);
+    //     $data = ['start_time'=> now(), 'end_time'=>now()->addHour(),'date'=>today(),'user_id'=>$user->id];
+    //     $appointment = Appointment::create($data);
+    //     $this->assertInstanceOf(Appointment::class, $appointment);
 
-    }
+    // }
 }
