@@ -12,7 +12,8 @@ use Carbon\Carbon;
 class AppointmentTest extends TestCase
 {
     
-
+    use RefreshDatabase;
+    
     public function test_can_create_appointment(){
 
         $appointmentData = [
